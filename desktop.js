@@ -23,7 +23,7 @@ function createDesktopWidget() {
   profilWidgetText.innerHTML = `
   <p class="widget-title">John Doe</p>
   <p class="widget-profil-info">Developer web</p>
-  <p class="widget-profil-info">Fançais</p>
+  <p class="widget-profil-info">Français</p>
   <p class="widget-profil-info">30 ans</p>
   <p class="widget-profil-info">126 abonnés</p>
   `;

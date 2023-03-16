@@ -22,7 +22,7 @@
     max-width: 600px;
   }
 
-  .search-main {
+  .main {
     padding: 0px;
     height: auto;
     display: grid;
@@ -60,7 +60,14 @@
   }
 
   /* WIDGETS FOR DESKTOP */
-
+  .event-widget,
+  .profil-widget,
+  .suggest-widget {
+    background-color: #fff;
+    border-radius: 25px;
+    border: 2px solid var(--gray-dark);
+    box-shadow: var(--box-shadow-publication);
+  }
   .profil-widget {
     display: flex;
     flex-flow: column wrap;
@@ -137,7 +144,7 @@
   }
 
   .suggest-widget {
-    background-color: var(--pink-light);
+    background-color: #fff;
     display: flex;
     flex-flow: column wrap;
     grid-row: 1 / 4;
