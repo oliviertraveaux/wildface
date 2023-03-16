@@ -1,0 +1,120 @@
+@import url("variable.css");
+
+* {
+    
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+@font-face {
+    font-family: Ultraregular;
+    src: url("font/Ultra-Regular.ttf");
+}
+@font-face {
+    font-family: SourceSansPro;
+    src: url("SourceSansPro-Black.ttf");
+}
+
+body {
+    background-color: var(--background-white);
+}
+
+nav button {
+    
+    margin-left: 3%;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-top: 3%;
+    background-color: var(--background-color);
+}
+
+nav button .material-symbols-rounded {
+    padding: 6% 0% 1% 25%;
+    
+}
+
+main header h1 {
+    font-size: 189%;
+    font-family: Ultraregular;
+    font-weight: 100;
+    color: var(--gray-dark);
+    padding-top: 5%;
+    text-align: center;
+}
+
+main header h2 {
+    text-align: center;
+    font-family: SourceSansPro;
+    font-size: 125%;
+    font-weight: bold;
+    color: var(--gray-dark);
+    padding: 7%;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    
+    flex-direction: column;
+    align-items: center;
+    padding: 2% 0 5% 0;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 70%;
+    
+    
+}
+
+main form div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10%;
+    align-items: center;
+}
+
+main form div input {
+    border-radius: 4px; 
+    box-shadow: var(--box-shadow-publication);
+    width: 60%;
+    height: 50%;
+}
+
+main form div label {
+    padding: 3%;
+    font-family: SourceSansPro;
+
+}
+
+main form #message {
+    border-radius: 4px; 
+    box-shadow: var(--box-shadow-publication);
+    width: 85%;
+    height: 17vh;
+}
+
+main form .submitButton {
+    border-radius: 4px; 
+    box-shadow: var(--box-shadow-publication);
+    width: 50px;
+    height: 20px; 
+}
+
+main form .button {
+    display: flex;
+    
+}
+
+
+
+
+
+
