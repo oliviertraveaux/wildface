@@ -3,26 +3,33 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    list-style: none;
+    font-family: SourceSansPro-ExtraLight;
+    text-decoration: none;
 }
 
 @font-face {
     font-family: Ultraregular;
     src: url("font/Ultra-Regular.ttf");
 }
+@font-face {
+    font-family: SourceSansPro-ExtraLight;
+    src: url("font/SourceSansPro-Regular.ttf");
+}
 
-@media screen and (min-width: 320px) {
+
     body {
         width: 100%;
-        /* height: 100vh; */
-        /* border: 2px solid red; */
         background-color: var(--background-white);
     }
 
     header nav {
         height: 50px;
+        width: 100%;
         display: flex;
         justify-content: space-around;
         align-items: center;
+        margin-bottom: 5px;
     }
 
     header nav h1 {
@@ -31,31 +38,47 @@
         color: var(--gray-dark);
     }
 
-    header nav div.logo-svg svg {
-        padding: 3px;
+    header nav ul.logo-svg {
+        display: inline-flex;
+    }
+
+    header nav ul.logo-svg li svg {
+        /* padding: 3px; */
         box-shadow: 3px 1px 1px 1px #393C38;
         /* box-shadow: -6px 2px 1px 1px #393C38; */
         /* box-shadow: 0px 1px 1px 1px #393C38; */
         /* box-shadow: inset 5px -1px 4px 0px #393C38; */
         border-radius: 10px;
-        margin: 2px;
+        margin: 0 8px;
     }
 
     header article.find-home {
         display: flex;
         justify-content: center;
         gap: 20px;
-        margin-bottom: 15px;
-    }
-    
-    header div.round {
-        height: 30px;
-        width: 30px;
-        border: 2px solid var(--gray-dark);
-        border-radius: 50%;
+        margin-bottom: 10px;
+        align-items: flex-end;
     }
 
-    header input#find {
+    .formulaire {
+       all: unset;
+    }
+    
+    header figure.round {
+        height: 40px;
+        width: 40px;
+        border: 2px solid var(--gray-dark);
+        border-radius: 50%;
+        border: none;
+    }
+
+    header figure.round img {
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+    }
+
+    header a input {
         height: 30px;
         min-width: 70%;
         border-radius: 25px;
@@ -63,6 +86,11 @@
         box-shadow: var(--box-shadow-publication);
         padding: 0 7px;
     }
+
+    header a input:focus {
+        outline: none;
+    }
+
 
     main.home-main {
         /* border: 2px solid blue; */
@@ -79,7 +107,7 @@
     main article.section-new {
         display: flex;
         flex-direction: column;
-        gap: 25px;
+        /* gap: 25px; */
     }
 
     main article.section-new section.actuality {
@@ -103,12 +131,19 @@
         width: 100%;
     }
 
-    main article.section-new section.actuality aside.publish-by div.small-round {
+    main article.section-new section.actuality aside.publish-by figure.small-round {
         height: 20px;
         width: 20px;
         border: 2px solid var(--gray-dark);
         border-radius: 50%;
         margin: 5px 5px;
+        border: unset;
+    }
+
+    main article.section-new section.actuality aside.publish-by figure.small-round img.really-small-round {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
     }
 
     main article.section-new section.actuality aside.publish-by p.author {
@@ -128,9 +163,8 @@
         margin: 0 auto;
     }
 
-    main article.section-new section.actuality div.picture-text figure.picture img {
-        height: 275px;
-        /* width: 100%; */
+    main article.section-new section.actuality div.picture-text figure.picture .imgBigg {
+        width: 100%;
     }
 
     main article.section-new section.actuality div.dislike-like {
@@ -141,20 +175,38 @@
         display: inline-flex;
     }
 
-    main article.section-new section.actuality div.dislike-like button.dislike, 
-    main article.section-new section.actuality div.dislike-like button.like {
+    main article.section-new section.actuality div.dislike-like button.dis-like, 
+    main article.section-new section.actuality div.dislike-like button.li-ke {
+        position: relative;
         width: 50%;
         height: 35px;
-        /* border: 1px solid red; */
+        margin: -4px auto;
         border: none;
     }
 
-    main article.section-new section.actuality div.dislike-like button.dislike {
+    main article.section-new section.actuality div.dislike-like .dis-like {
         background-color: var(--pink-light);
     }
 
-    main article.section-new section.actuality div.dislike-like button.like {
+    main article.section-new section.actuality div.dislike-like .li-ke {
         background-color: var(--green-light);
     }
 
-}
+    main article.section-new section.actuality div.dislike-like .dis-like span.counter, 
+    main article.section-new section.actuality div.dislike-like .li-ke span.counter {
+        position: absolute;
+        font-size: larger;
+        top: 10px;
+    }
+
+    main article.section-new section.actuality div.dislike-like .dis-like span.counter {
+        left: 20px;
+    }
+
+    main article.section-new section.actuality div.dislike-like .li-ke span.counter {
+        right: 20px;
+    }
+    a {
+        display: flex;
+        gap: 10px;
+    }
