@@ -64,53 +64,55 @@ main {
     padding: 2% 0 5% 0;
 }
 
-main form {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    height: 70%;
-    
-    
-}
 
-main form div {
+main form  {
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 10%;
-    align-items: center;
+    padding-top: 4%;
+    gap: 5px;
 }
 
-main form div input {
-    border-radius: 4px; 
+main form input[type=text], main form input[type=email] {
+    border-radius: 20px; 
     box-shadow: var(--box-shadow-publication);
     width: 60%;
-    height: 50%;
+    text-align: center;
+    border-color: transparent;
+    margin: 0 auto;
+}
+main form input[type=email] {
+    margin: 0 auto 5px auto;
 }
 
-main form div label {
+main form label:nth-child(1), main form label:nth-child(3) {
     padding: 3%;
     font-family: SourceSansPro;
+    margin: 0 20%;
 
 }
 
-main form #message {
+main form textarea {
     border-radius: 4px; 
     box-shadow: var(--box-shadow-publication);
-    width: 85%;
+    width: 100%;
     height: 17vh;
+    margin: 0 auto 5px auto;
 }
 
-main form .submitButton {
-    border-radius: 4px; 
-    box-shadow: var(--box-shadow-publication);
-    width: 50px;
-    height: 20px; 
+.message {
+    /* margin: 0 5%; */
+    align-self: flex-start;
+
 }
 
-main form .button {
-    display: flex;
-    
+
+
+main form input[type=submit]{
+    border-radius: 4px;
+    width: 55px;
+    align-self: flex-end;
 }
 
 
