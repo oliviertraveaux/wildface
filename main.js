@@ -630,4 +630,3 @@ fetchProducts().then(reponseJS => {
 
 
 // });
-
