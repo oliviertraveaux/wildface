@@ -480,12 +480,9 @@ const reponseJS = {
     return reponseJS;
 }
 
-
 fetchProducts().then(reponseJS => {
     reponseJS;
     console.log(reponseJS);*/
-
-
 
     const navigation = document.querySelector('nav');
 
@@ -521,10 +518,7 @@ fetchProducts().then(reponseJS => {
     const sectionNew = document.querySelector('.section-new');
     const article = document.querySelector('article');
 
-
-
     for (let i = 0; i < 8; i++) {
-
 
         let dislike = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
         let like = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
@@ -557,14 +551,8 @@ fetchProducts().then(reponseJS => {
 <br/>
 `;
 
-
         const buttonLike = document.querySelectorAll('.li-ke');
         const buttondisLike = document.querySelectorAll('.dis-like');
-        // console.log(buttonLike);
-        // console.log(buttondisLike);
-        // console.log(counterdown);
-        // console.log(counterup);
-
 
         function disLikeButton(j) {
             const counterdown = document.querySelectorAll('.counterdown');
