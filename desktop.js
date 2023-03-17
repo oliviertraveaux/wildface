@@ -11,7 +11,7 @@ function createDesktopWidget() {
   const profilWidgetImageContainer = document.createElement("div");
   profilWidgetImageContainer.classList.add("profil-widget-image-container");
   profilWidget.appendChild(profilWidgetImageContainer);
-  // CREATE PROFIL IMG CONTAINER
+  // CREATE PROFIL IMG
   const profilWidgetImage = document.createElement("img");
   profilWidgetImage.classList.add("profil-widget-image");
   profilWidgetImageContainer.appendChild(profilWidgetImage);
