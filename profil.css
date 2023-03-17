@@ -1,3 +1,5 @@
+@import url(variable.css);
+
 *{
     box-sizing: border-box;
 }
@@ -69,6 +71,9 @@ header .banner{
     border: solid 2px black;
     border-radius: 4px;
     box-shadow: var(--box-shadow-publication);
+    background-image: url("https://www.royanatlantique.fr/app/uploads/2022/09/coucher-soleil-saint-palais-sur-mera-t.avan.jpg");
+    background-position: center center;
+    background-size: cover;
 }
 
 header .banner .picture{
@@ -79,8 +84,10 @@ header .banner .picture{
     position: relative;
     top: 75px;
     left: 15px;
-    z-index: 10;
-    background-color: brown;
+    z-index: 9;
+    background-image: url("https://randomuser.me/api/portraits/women/95.jpg");
+    background-position: center center;
+    background-size: cover;
 }
 
 main {
@@ -106,6 +113,10 @@ main .information .biographie .subject{
 
 main div h2{
     padding-bottom: 40px;
+}
+h1, h2{
+    font-family: var(--font-title);
+    font-size: medium;
 }
 
 @media screen and (min-width: 321px){
