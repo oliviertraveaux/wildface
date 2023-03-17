@@ -1,5 +1,8 @@
+@import url(variable.css);
+
 *{
     box-sizing: border-box;
+    font-family: var(--font-primary);
 }
 
 body{
@@ -20,7 +23,7 @@ header nav button{
     border-radius: 50%;
     height: 40px;
     width: 40px;
-    margin-top: 33%;
+    margin-top: 14%;
     background-color: var(--background-color);
 }
 
@@ -113,7 +116,11 @@ main div h2{
     padding-bottom: 40px;
 }
 
-@media screen and (min-width: 321px){
+ h1, h2{
+    font-family: var(--font-title);
+    font-size: medium;
+}
+/*@media screen and (min-width: 321px){
 main .information {
   padding: 0 25%;
   display: flex;
@@ -128,4 +135,4 @@ main .information .biographie{
 main .carreer div{
     justify-content: space-evenly;
 }
-}
+}*/
