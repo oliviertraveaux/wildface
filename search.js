@@ -23,7 +23,7 @@ async function enAttente() {
       </p>
       <p class="user-card-job">${data.users[i].job}</p>
       <p class="user-card-details">
-      <span class="user-card-details-city">Lives in ${data.users[i].location.city} -</span> <span class="user-card-details-city></span><span class="user-card-details-country>${data.users[i].nat}</span>
+      <span class="user-card-details-city">${data.users[i].location.city} -</span> <span class="user-card-details-city></span><span class="user-card-details-country>${data.users[i].nat}</span>
       <p class="user-card-details-description">${data.users[i].description}</p>
       </div>
       <a href="contact.html"><div class="user-card-cta"><span class="material-symbols-rounded">
