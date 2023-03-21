@@ -11,6 +11,7 @@
     font-family: Ultraregular;
     src: url("font/Ultra-Regular.ttf");
 }
+
 @font-face {
     font-family: SourceSansPro-ExtraLight;
     src: url("font/SourceSansPro-Regular.ttf");
@@ -36,7 +37,6 @@ nav button .material-symbols-rounded {
     padding: 6% 0% 1% 25%;
     
 }
-
 
 main header h1 {
     font-size: 189%;
@@ -64,7 +64,6 @@ main {
     padding: 2% 0 5% 0;
 }
 
-
 main form  {
     width: 80%;
     display: flex;
@@ -82,6 +81,7 @@ main form input[type=text], main form input[type=email] {
     border-color: transparent;
     margin: 0 auto;
 }
+
 main form input[type=email] {
     margin: 0 auto 5px auto;
 }
@@ -106,11 +106,8 @@ main form textarea {
 
 }
 
-
-
 main form input[type=submit]{
     border-radius: 4px;
     width: 55px;
     align-self: flex-end;
 }
-
