@@ -9,11 +9,11 @@ body {
   background-color: var(--background-white);
 }
 
-header nav {
+/* header nav {
   display: grid;
   grid-template-columns: 50px 100px;
   margin-left: 3%;
-}
+} */
 
 header nav button .material-symbols-rounded {
   padding: 4px 0 1px 6px;
@@ -65,7 +65,7 @@ main article p {
   margin: 5% 3%;
 }
 
-header .banner {
+main .banner {
   width: 96%;
   height: 140px;
   border: solid 2px black;
@@ -76,7 +76,7 @@ header .banner {
   background-size: cover;
 }
 
-header .banner .picture {
+main .banner .picture {
   border-radius: 50%;
   border: solid 2px black;
   width: 130px;
@@ -135,4 +135,19 @@ h2 {
   main .carreer div {
     justify-content: space-evenly;
   }
+}
+
+/* DESKTOP PAGE SPECIFICATION */
+
+.main .main-profil {
+}
+
+.profil-widget {
+  display: none !important;
+}
+
+.event-widget {
+  height: min-content;
+  grid-row: 2 / 4 !important;
+  grid-column: 2 / 3 !important;
 }

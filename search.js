@@ -75,3 +75,6 @@ function filterUsers() {
     }
   }
 }
+
+const usersLambda = data.users.map((user) => user.name);
+console.log(usersLambda);
