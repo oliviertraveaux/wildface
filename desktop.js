@@ -115,28 +115,28 @@ function createDesktopWidget() {
   suggestWidgetText.innerHTML += `
       <p class="widget-title">Suggestions</p>
       <div class="suggest-widget-text-container">
-      <span class="material-symbols-rounded">person_add</span>
+      <span class="material-symbols-rounded add-person">person_add</span>
         <div>
         <p class="widget-suggest-name">Alma Hansen</p>
         <p class="widget-suggest-job">Front-End Developer</p>
         </div>
       </div>
       <div class="suggest-widget-text-container">
-      <span class="material-symbols-rounded">person_add</span>
+      <span class="material-symbols-rounded add-person">person_add</span>
         <div>
         <p class="widget-suggest-name">Oscar Kelley</p>
         <p class="widget-suggest-job">Back-End Developer</p>
         </div>
       </div>
       <div class="suggest-widget-text-container">
-      <span class="material-symbols-rounded">person_add</span>
+      <span class="material-symbols-rounded add-person">person_add</span>
         <div>
         <p class="widget-suggest-name">Karla Olsen</p>
         <p class="widget-suggest-job">Java Developer</p>
         </div>
       </div>
       <div class="suggest-widget-text-container">
-      <span class="material-symbols-rounded">person_add</span>
+      <span class="material-symbols-rounded add-person">person_add</span>
         <div>
         <p class="widget-suggest-name">Joe Maldi</p>
         <p class="widget-suggest-job">UX Designer</p>
