@@ -1,3 +1,5 @@
+let contactedUser = {};
+
 // FETCH JSON DATA
 
 async function enAttente() {
@@ -23,13 +25,29 @@ async function enAttente() {
       </p>
       <p class="user-card-job">${data.users[i].job}</p>
       <p class="user-card-details">
-      <span class="user-card-details-city">${data.users[i].location.city} -</span> <span class="user-card-details-city></span><span class="user-card-details-country>${data.users[i].nat}</span>
+      <span class="user-card-details-city">${data.users[i].location.city} -</span><span class="user-card-details-country">${data.users[i].nat}</span>
       <p class="user-card-details-description">${data.users[i].description}</p>
       </div>
-      <a href="contact.html"><div class="user-card-cta"><span class="material-symbols-rounded">
+      <a class="user-card-cta-link" href="#"><div class="user-card-cta"><span class="material-symbols-rounded">
       send
       </span></a></div>
       </div>`;
+    }
+    // GET USER ID FOR CONTACT FORM
+    console.log(data.users.lenght);
+
+    // LISTEN TO CLICK
+
+    const cta = document.querySelectorAll(
+      ".user-card-container .material-symbols-rounded"
+    );
+    console.log(cta.length);
+    for (let i = 0; i < cta.length; i++) {
+      cta[i].addEventListener("click", () => {
+        console.log(data.users[i]);
+        contactedUser = data.users[i];
+        console.log(contactedUser);
+      });
     }
   }
 
@@ -76,5 +94,4 @@ function filterUsers() {
   }
 }
 
-const usersLambda = data.users.map((user) => user.name);
-console.log(usersLambda);
+export { contactedUser };
