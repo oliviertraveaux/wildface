@@ -1,126 +1,138 @@
-*{
-    box-sizing: border-box;
+@import url(variable.css);
+
+* {
+  box-sizing: border-box;
+  color: var(--gray-dark);
 }
 
-body{
-    background-color: var(--background-white);
+body {
+  background-color: var(--background-white);
 }
 
- header nav{
-    display: grid;
-    grid-template-columns: 50px 100px;
-    margin-left: 3%;
+header nav {
+  display: grid;
+  grid-template-columns: 50px 100px;
+  margin-left: 3%;
 }
 
-header nav button .material-symbols-rounded{
-    padding: 4px 0 1px 6px;
+header nav button .material-symbols-rounded {
+  padding: 4px 0 1px 6px;
 }
 
-header nav button{
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
-    margin-top: 33%;
-    background-color: var(--background-color);
+header nav button {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin-top: 33%;
+  background-color: var(--background-color);
 }
 
-main .carreer{
-    display: flex;
-    justify-content: space-around;
-    width: 89%;
-  }
-
-
-main .carreer div{
-    border-radius: 25px;
-    border: 2px solid black;
-    width: 130px;
-    height: 45px;
-    background-color: var(--background-color);
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+main .carreer {
+  display: flex;
+  justify-content: space-around;
+  width: 89%;
 }
 
-main .carreer div .material-symbols-rounded{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 2px solid black;
-    margin: 3%;
+main .carreer div {
+  border-radius: 25px;
+  border: 2px solid black;
+  width: 130px;
+  height: 45px;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-main .carreer .yellow .material-symbols-rounded{
-    background-color: #F4C552;
+main .carreer div .material-symbols-rounded {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid black;
+  margin: 3%;
 }
 
-main .carreer .pink .material-symbols-rounded{
-    background-color: #FDC0D2;
+main .carreer .yellow .material-symbols-rounded {
+  background-color: #f4c552;
 }
 
-main article p{
-    line-height: 20px;
-    margin: 5% 3%;
+main .carreer .pink .material-symbols-rounded {
+  background-color: #fdc0d2;
 }
 
-header .banner{
-    width: 96%;
-    height: 140px;
-    border: solid 2px black;
-    border-radius: 4px;
-    box-shadow: var(--box-shadow-publication);
+main article p {
+  line-height: 20px;
+  margin: 5% 3%;
 }
 
-header .banner .picture{
-    border-radius: 50%;
-    border: solid 2px black;
-    width: 130px;
-    height: 130px;
-    position: relative;
-    top: 75px;
-    left: 15px;
-    z-index: 10;
-    background-color: brown;
+header .banner {
+  width: 96%;
+  height: 140px;
+  border: solid 2px black;
+  border-radius: 4px;
+  box-shadow: var(--box-shadow-publication);
+  background-image: url("https://www.royanatlantique.fr/app/uploads/2022/09/coucher-soleil-saint-palais-sur-mera-t.avan.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+header .banner .picture {
+  border-radius: 50%;
+  border: solid 2px black;
+  width: 130px;
+  height: 130px;
+  position: relative;
+  top: 75px;
+  left: 15px;
+  z-index: 9;
+  background-image: url("https://randomuser.me/api/portraits/women/95.jpg");
+  background-position: center center;
+  background-size: cover;
 }
 
 main {
-    margin: 95px 10px;
-    text-align: justify;
+  margin: 95px 10px;
+  text-align: justify;
 }
 
- main .information .biographie{
-    display: grid;
-    grid-template-rows: 50px 50px;
-    grid-template-columns: 1.3fr 1fr 1fr 1fr;
-    text-align: start; 
+main .information .biographie {
+  display: grid;
+  grid-template-rows: 50px 50px;
+  grid-template-columns: 1.3fr 1fr 1fr 1fr;
+  text-align: start;
 }
 
-main .information .biographie .subject{
-    font-weight : 600;
+main .information .biographie .subject {
+  font-weight: 600;
 }
 
- main article h2{
-    padding-top: 20px;
-    margin-bottom: 40px;
+main article h2 {
+  padding-top: 20px;
+  margin-bottom: 40px;
 }
 
-main div h2{
-    padding-bottom: 40px;
+main div h2 {
+  padding-bottom: 40px;
+}
+h1,
+h2 {
+  font-family: var(--font-title);
+  font-size: medium;
 }
 
-@media screen and (min-width: 321px){
-main .information {
-  padding: 0 25%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-main .information .biographie{
+@media screen and (min-width: 321px) {
+  main .information {
+    padding: 0 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .information .biographie {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 133%;
     grid-column-gap: 35px;
-}
-main .carreer div{
+  }
+  main .carreer div {
     justify-content: space-evenly;
-}
+  }
 }
