@@ -1,10 +1,16 @@
-/* MEDIA QUERIES - MOBILE 1 TABLETT*/
+.event-widget,
+.profil.widget,
+.suggest-widget {
+  display: none;
+}
 
-@media screen and (max-width: 1023px) {
-  .event-widget,
-  .profil.widget,
-  .suggest-widget {
-    display: none;
+/* MEDIA QUERIES - MOBILE - TABLETT*/
+
+@media screen and (min-width: 768px) {
+  body .profil-widget,
+  body .event-widget,
+  body .suggest-widget {
+    display: flex;
   }
 }
 
