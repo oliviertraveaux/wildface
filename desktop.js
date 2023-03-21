@@ -2,16 +2,16 @@
 
 function createDesktopWidget() {
   // CREATE PROFIL CONTAINER
-  const mainBlock = document.querySelector("main");
-  console.log(mainBlock);
+  const bodyBlock = document.querySelector("body");
+  console.log(bodyBlock);
   const profilWidget = document.createElement("div");
   profilWidget.classList.add("profil-widget");
-  mainBlock.appendChild(profilWidget);
+  bodyBlock.appendChild(profilWidget);
   // CREATE PROFIL IMG CONTAINER
   const profilWidgetImageContainer = document.createElement("div");
   profilWidgetImageContainer.classList.add("profil-widget-image-container");
   profilWidget.appendChild(profilWidgetImageContainer);
-  // CREATE PROFIL IMG CONTAINER
+  // CREATE PROFIL IMG
   const profilWidgetImage = document.createElement("img");
   profilWidgetImage.classList.add("profil-widget-image");
   profilWidgetImageContainer.appendChild(profilWidgetImage);
@@ -30,7 +30,7 @@ function createDesktopWidget() {
   // CREATE EVENT WIDGET
   const eventWidget = document.createElement("div");
   eventWidget.classList.add("event-widget");
-  mainBlock.appendChild(eventWidget);
+  bodyBlock.appendChild(eventWidget);
 
   // CREATE EVENT TEXT
   const eventWidgetText = document.createElement("div");
@@ -102,12 +102,12 @@ function createDesktopWidget() {
     </div>
   </div>
   `;
-  // CREATE EVENT WIDGET
+  // CREATE SUGGEST WIDGET
   const suggestWidget = document.createElement("div");
   suggestWidget.classList.add("suggest-widget");
-  mainBlock.appendChild(suggestWidget);
+  bodyBlock.appendChild(suggestWidget);
 
-  // CREATE EVENT TEXT
+  // CREATE SUGGEST TEXT
   const suggestWidgetText = document.createElement("div");
   suggestWidgetText.classList.add("suggest-widget-text");
   suggestWidget.appendChild(suggestWidgetText);
@@ -115,28 +115,28 @@ function createDesktopWidget() {
   suggestWidgetText.innerHTML += `
       <p class="widget-title">Suggestions</p>
       <div class="suggest-widget-text-container">
-      <span class="material-symbols-rounded">person_add</span>
+      <span class="material-symbols-rounded add-person">person_add</span>
         <div>
         <p class="widget-suggest-name">Alma Hansen</p>
         <p class="widget-suggest-job">Front-End Developer</p>
         </div>
       </div>
       <div class="suggest-widget-text-container">
-      <span class="material-symbols-rounded">person_add</span>
+      <span class="material-symbols-rounded add-person">person_add</span>
         <div>
         <p class="widget-suggest-name">Oscar Kelley</p>
         <p class="widget-suggest-job">Back-End Developer</p>
         </div>
       </div>
       <div class="suggest-widget-text-container">
-      <span class="material-symbols-rounded">person_add</span>
+      <span class="material-symbols-rounded add-person">person_add</span>
         <div>
         <p class="widget-suggest-name">Karla Olsen</p>
         <p class="widget-suggest-job">Java Developer</p>
         </div>
       </div>
       <div class="suggest-widget-text-container">
-      <span class="material-symbols-rounded">person_add</span>
+      <span class="material-symbols-rounded add-person">person_add</span>
         <div>
         <p class="widget-suggest-name">Joe Maldi</p>
         <p class="widget-suggest-job">UX Designer</p>

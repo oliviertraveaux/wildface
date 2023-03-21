@@ -1,18 +1,27 @@
+.event-widget,
+.profil.widget,
+.suggest-widget {
+  display: none;
+}
+
+/* MEDIA QUERIES - MOBILE - TABLETT*/
+
+@media screen and (min-width: 768px) {
+  body .profil-widget,
+  body .event-widget,
+  body .suggest-widget {
+    display: flex;
+  }
+}
+
 /* MEDIA QUERIES - Desktop */
 
 @media screen and (min-width: 1024px) {
   body {
     display: grid;
-    grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
-    grid-template-rows: 75px 50px 50px 1fr;
+    grid-template-columns: 1fr 200px 500px 200px 1fr;
+    grid-template-rows: 75px 275px 350px 1fr;
     gap: 15px;
-  }
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    grid-row: 1 / 2;
-    grid-column: 2 / 5;
   }
 
   nav .logo.svg {
@@ -22,16 +31,14 @@
     max-width: 600px;
   }
 
-  .main {
+  main {
+    margin: 0px;
     padding: 0px;
     height: auto;
-    display: grid;
-    grid-template-columns: 200px 3fr 200px;
-    grid-template-rows: 50px 30px 140px;
     grid-auto-rows: auto;
     gap: 15px;
     grid-row: 2 / 3;
-    grid-column: 2 / 5;
+    grid-column: 3 / 4;
   }
 
   .search-bar {
@@ -40,7 +47,7 @@
   }
 
   .main h1 {
-    padding-top: 0;
+    padding-top: 15px;
     grid-row: 2 / 3;
     grid-column: 2 / 3;
   }
@@ -73,8 +80,8 @@
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-    grid-row: 1 / 4;
-    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
   }
 
   .profil-widget-image-container {
@@ -105,10 +112,7 @@
 
   .widget-title {
     font-weight: 700;
-  }
-
-  .widget-event-text .widget-title {
-    padding: 10px 0px;
+    padding: 10px 0px 5px 0px;
   }
 
   .widget-info {
@@ -125,8 +129,8 @@
 
   .event-widget {
     display: flex;
-    grid-row: 4 / 5;
-    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
   }
 
   .widget-event-text {
@@ -139,6 +143,10 @@
     gap: 8px;
   }
 
+  .widget-event-text .widget-title:nth-child(2) {
+    padding-top: 10px;
+  }
+
   .widget-event-block .material-symbols-rounded {
     color: #83b0b8;
   }
@@ -147,8 +155,8 @@
     background-color: #fff;
     display: flex;
     flex-flow: column wrap;
-    grid-row: 1 / 4;
-    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    grid-column: 4 / 5;
   }
 
   .suggest-widget-text {
@@ -172,8 +180,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-
-  .suggest-widget-text-container .material-symbols-rounded {
+  .suggest-widget .material-symbols-rounded {
     color: var(--blue-light);
     padding-right: 8px;
   }
