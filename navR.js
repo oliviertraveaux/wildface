@@ -1,6 +1,6 @@
 const navigation = document.querySelector('nav');
 
-    navigation.innerHTML += `
+navigation.innerHTML += `
 <a href="main.html"><h1 class="nav__title__wild_face">Wild Face</h1></a>
 
 <ul class="logo-svg">
