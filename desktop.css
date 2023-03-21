@@ -1,18 +1,11 @@
 .event-widget,
-.profil.widget,
+.profil-widget,
 .suggest-widget {
   display: none;
+  opacity: 0;
 }
 
 /* MEDIA QUERIES - MOBILE - TABLETT*/
-
-@media screen and (min-width: 768px) {
-  body .profil-widget,
-  body .event-widget,
-  body .suggest-widget {
-    display: flex;
-  }
-}
 
 /* MEDIA QUERIES - Desktop */
 
@@ -75,7 +68,8 @@
     border: 2px solid var(--gray-dark);
     box-shadow: var(--box-shadow-publication);
   }
-  .profil-widget {
+
+  body .profil-widget {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -127,7 +121,7 @@
     -webkit-text-fill-color: transparent;
   }
 
-  .event-widget {
+  body .event-widget {
     display: flex;
     grid-row: 3 / 4;
     grid-column: 2 / 3;
@@ -151,7 +145,7 @@
     color: #83b0b8;
   }
 
-  .suggest-widget {
+  body .suggest-widget {
     background-color: #fff;
     display: flex;
     flex-flow: column wrap;
