@@ -20,7 +20,7 @@
 body {
     font-family: SourceSansPro-ExtraLight;
     background-color: var(--background-white);
-    height: 100vh;
+    min-height:100%;
 }
 
 nav button {
@@ -48,7 +48,6 @@ main header h1 {
 
 main header h2 {
     text-align: center;
-    font-family: SourceSansPro;
     font-size: 125%;
     font-weight: bold;
     color: var(--gray-dark);
@@ -61,6 +60,7 @@ main {
     flex-direction: column;
     align-items: center;
     padding: 2% 0 5% 0;
+    height: calc(100vh - 50px);
 }
 
 main form  {
@@ -107,4 +107,17 @@ main form input[type=submit]{
     border-radius: 4px;
     width: 55px;
     align-self: flex-end;
+}
+
+footer {
+    height: 30px;
+    font-size: 80%;
+    font-weight: bold;
+    color: var(--gray-dark);
+    background-color: var(--pink-light);
+}
+
+footer p {
+    padding-left: 10px;
+
 }
