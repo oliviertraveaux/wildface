@@ -4,27 +4,35 @@
     margin: 0;
     box-sizing: border-box;
     list-style: none;
+    font-family: var(--font-primary): ;
 }
 
-@font-face {
-  font-family: Ultraregular;
-  src: url("font/Ultra-Regular.ttf");
+h1 {
+  font-family: var(--font-title);
+  font-size: 20px;
+}
+
+h2 {
+  font-family: var(--font-title);
+  font-size: 15px;
 }
 
 main { 
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  padding: 5%;
   background-color: #F4EEDC;
-  border-top-right-radius: 5%;
-  border-top-left-radius: 5%;
-  border-bottom-left-radius: 0%;
-  border-bottom-right-radius: 45%;
+  border-top-right-radius: 10%;
+  border-top-left-radius: 1%;
+  border-bottom-left-radius: 1%;
+  border-bottom-right-radius: 40%;
   border: 4px solid #393C38;
   border-right-width: 9px;
   border-bottom-width: 9px;
-  height: 100vh; 
+  height: 100vh;
+}
+
+div {
+  justify-content: space-between;
 }
 
 .intro {
@@ -32,32 +40,89 @@ main {
   align-items: center;
   flex-direction: column;
 }
+
 .vcpe {
+  position: absolute;
+  top: 5%;
+  left: 5%;
   font-family: Ultraregular;
+  font-weight: lighter;
+  font-size: 25px;
+  margin-left: 5%;
 }
+
 img {
+  position: absolute;
+  top: 16%;
   width: 125px;
   height: 125px;
-  border: 2px solid black;
+  border: 4px solid black;
   border-radius: 100%;
+  box-shadow: #393C38;
+  margin-top: 5%;
+  margin-bottom: 3%;
 }
+
+.nomPrenom {
+  position: absolute;
+  top: 42%;
+  font-size: larger;
+  font-weight: bold;
+}
+
 .job {
+  position: absolute;
+  top: 48%;
+  left: 32%;
   font-weight: lighter;
+  font-size: large;
+  padding-left: 20px;
 }
 
 .age {
-  background-color: blue;
+  position: absolute;
+  bottom: 42%;
+  left: 10%;
 }
+
 .from {
-  background-color: violet;
+  position: absolute;
+  bottom: 38%;
+  left: 10%;
+}
+
+.styled {
+  position: absolute;
+  bottom: 38%;
+  right: 10%;
+  line-height: 2.5;
+  padding: 3 10px;
+  font-size: 75%;
+  font-family: Ultraregular;
+  font-weight: lighter ;
+  text-align: center;
+  text-shadow: 0.5px 0.5px 0.5px #000;
+  border: 3px solid #000000;
+  border-radius: 10px;
+  background-color: #FDC0D2;
+  background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+  box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 
 .about {
-  padding-top: 20%;
-  display: flex;
-  flex-direction: column;
-  background-color: red;
+  position: absolute;
+  bottom: 2%;
+  padding-left: 2%;
+  border:(.5);
+  font-weight: lighter;
 }
+
 .aPropos {
   font-family: Ultraregular;
+  padding-bottom: 5%;
+  font-weight: lighter;
+}
+
+.paraPropo {
+  width: 80%;
 }
