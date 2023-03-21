@@ -26,6 +26,5 @@ navigation.innerHTML += `
 
         </li>
     </ul>
-    <input class="input__type_search_nav" type="search" value="Search">
 
                         `;
