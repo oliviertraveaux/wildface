@@ -24,6 +24,8 @@
 
   input .search-bar {
     max-width: 600px;
+    height: 690px;
+    overflow-y: scroll;
   }
 
   main {
@@ -34,6 +36,7 @@
     gap: 15px;
     grid-row: 2 / 3;
     grid-column: 3 / 4;
+    height: 690px;
   }
 
   .search-bar {
@@ -42,7 +45,7 @@
   }
 
   .main h1 {
-    padding: 20px 0px;
+    padding: 20px 6px;
     grid-row: 2 / 3;
     grid-column: 2 / 3;
   }
@@ -51,7 +54,7 @@
     display: flex;
     padding-right: 5px;
     flex-flow: column nowrap;
-    overflow-y: scroll hidden;
+    overflow-y: scroll;
     /* max-width: 400px; */
     grid-row: 3 / 6;
     grid-column: 2 / 3;
@@ -77,6 +80,7 @@
   }
   .user-card-container {
     min-width: 300px;
+    margin: 0px 6px;
   }
 
   .user-card-details-description {
