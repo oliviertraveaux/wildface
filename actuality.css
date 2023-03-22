@@ -1,5 +1,47 @@
 @import url(variable.css);
 
+.last__actuality_title {
+    font-family: var(--font-primary);
+    font-size: large;
+    padding: 5px 8%;
+}
+
+form {
+    height: 0;
+    width: 100%;
+    transition: all .5s ease-in-out;
+    position: relative;
+}
+
+.logo-plus {
+    transition: all .5s ease-in-out;
+}
+
+form input[type=submit] {
+    transition-delay: 1s;
+    transition: all .5s ease-in-out;
+    height: 0;
+    width: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 25px 25px 50px 10px;
+}
+
+    
+
+
+form textarea {
+    width: 100%;
+    min-height: 50px;
+    padding: 0 5px;
+}
+
+/* .section-new {
+    display: flex;
+    flex-direction: column;
+} */
+
 .actuality {
     background-color: #FFF;
     border: 2px solid var(--gray-dark);
@@ -16,6 +58,25 @@
     display: flex;
     height: 35px;
     width: 100%;
+}
+
+.div-comment {
+    width: 100%;
+    min-height: 20px;
+}
+
+.button-up-comment {
+    border: unset;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+.button-up-comment img {
+    height: 20px;
+    width: 20px;
 }
 
 .actuality aside.publish-by figure.small-round {
@@ -105,11 +166,12 @@
     padding: 0 7px;
 }
 
+
 @media screen and (min-width:764px) {
-    nav .nav__title__wild_face {
-        font-family: var(--font-title);
-        font-weight: 100;
-        font-size: 25px;
+
+    .section-new {
+        width: 80%;
+        margin: 0 auto;
     }
 
     .actuality aside.publish-by figure.small-round {
@@ -144,7 +206,33 @@
 
 
 @media screen and (min-width:1024px) {
+
+    .section-new {
+        height: 90vh;
+        overflow-y: scroll;
+    }
+
+    .section-new::-webkit-scrollbar {
+        width: 5px; /* width of the entire scrollbar */
+        background-color: transparent;
+      }
+      
+      .section-new::-webkit-scrollbar-track {
+        /* background: var(--gray-dark); /* color of the tracking area */
+        /*border-radius: 20px; */
+        background-color: transparent;
+      }
+      
+      .section-new::-webkit-scrollbar-thumb {
+        /*border-radius: 20px; /* roundness of the scroll thumb */
+        /*border: 3px solid var(--green-light); creates padding around scroll thumb*/
+        background-color: transparent;
+      }
    
+    .last__actuality_title {
+        font-size: revert;
+    }
+
     .actuality aside.publish-by figure.small-round {
         height: 40px;
         width: 40px;
