@@ -2,7 +2,7 @@ const form = document.querySelector("form");
 form.addEventListener("submit", function (event) {
   event.preventDefault();
   alert(
-    `${contactedUser_deserialized.name.first} ${contactedUser_deserialized.name.last} a bien reçu votre message !`
+    `${contactedUser_deserialized.name.first} ${contactedUser_deserialized.name.last} received your message!`
   );
 });
 // WE CHECK IF LOCAL STORAGE IS AVAILABLE IN CONTACT PAGE. LOCAL STORAGE DATA IS GENERATED FROM SEARCH.JS FILE
