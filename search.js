@@ -7,6 +7,9 @@ async function enAttente() {
   const data = await reponseJSON.json();
   console.log(data);
 
+  const usersLS = localStorage.setItem("contactedUser", JSON.stringify(data));
+  console.log(data);
+
   // SELECT CONTAINER TO INJECT DATA
   const userList = document.querySelector(".user-card-list");
 
