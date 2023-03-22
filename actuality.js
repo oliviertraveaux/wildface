@@ -478,11 +478,18 @@ const reponseJS = {
        }
      ]}
  
-
+    let counterChange = 0;
     const actualityPeople = document.querySelector('main');
     const sectionNew = document.createElement('div');
-    sectionNew.classList.add('.section-new');
+    sectionNew.classList.add('section-new');
     actualityPeople.appendChild(sectionNew);
+  let colorPrimaryLike = "#393C38";
+  let colorPrimaryDislike = "#393C38";
+  let colorPrimaryLikeChange = "#FF0000";
+  let colorPrimaryDislikeChange = "#FFF";
+
+    sectionNew.innerHTML += `
+        <h2 class="last__actuality_title">Dernière actualités</h2>`
 
     for (let i = 0; i < 8; i++) {
        
@@ -496,6 +503,7 @@ const reponseJS = {
     ></figure>
         <p class="author">Publié par <strong id="${reponseJS.users[i].name.first}">${reponseJS.users[i].name.first}</strong> <span class="job"> ${reponseJS.users[i].job}</span>
         </p>
+        <button class="button-up-comment" onclick="buttonUpCommentClick(${i})"><img class="logo-plus" src="img/plus.jpg" alt="+"></button>
 </aside>
 <div class="picture-text">
     <p class="text">${i % 2 == 0 ? reponseJS.users[i].poste : ""}</p>
@@ -503,23 +511,29 @@ const reponseJS = {
 </div>
 <div class="dislike-like">
     <button type="button" class="dis-like" onclick="disLikeButton(${i})">
-        <svg width="26" height="31" viewBox="0 0 26 31" fill="none">
-            <path d="M16.8795 18.0833V5.16663M16.8795 18.0833H21.0471V5.16665L16.8795 5.16663M16.8795 18.0833L11.4661 25.9127C10.9525 26.6557 10.1443 26.9751 9.37854 26.7377L9.32905 26.7223C7.93101 26.2891 7.30128 24.2696 8.10053 22.7833L10.628 18.0833H5.87647C4.56147 18.0833 3.5752 16.5919 3.83307 14.9934L5.08336 7.24335C5.2782 6.03584 6.1334 5.16665 7.12676 5.16665L16.8795 5.16663" stroke="#393C38" stroke-width="2.24" stroke-linecap="round" stroke-linejoin="round"/>
+        <svg class="liked__pouce" width="26" height="31" viewBox="0 0 26 31" fill="none">
+            <path d="M16.8795 18.0833V5.16663M16.8795 18.0833H21.0471V5.16665L16.8795 5.16663M16.8795 18.0833L11.4661 25.9127C10.9525 26.6557 10.1443 26.9751 9.37854 26.7377L9.32905 26.7223C7.93101 26.2891 7.30128 24.2696 8.10053 22.7833L10.628 18.0833H5.87647C4.56147 18.0833 3.5752 16.5919 3.83307 14.9934L5.08336 7.24335C5.2782 6.03584 6.1334 5.16665 7.12676 5.16665L16.8795 5.16663" stroke=${colorPrimaryDislike} stroke-width="2.24" stroke-linecap="round" stroke-linejoin="round"/>
         </svg><span class="counterdown">${dislike[i]}</span>
     </button>
     <button type="button" class="li-ke" onclick="LikeButton(${i})">
-        <svg width="26" height="28" viewBox="0 0 26 28" fill="none">
-            <path d="M9.08232 11.6667V23.3334M9.08232 11.6667L4.91467 11.6667V23.3334H9.08232M9.08232 11.6667L14.4957 4.59492C15.0093 3.92389 15.8174 3.63542 16.5833 3.84977L16.6327 3.86365C18.0308 4.255 18.6605 6.07904 17.8613 7.42162L15.3338 11.6667H20.0853C21.4003 11.6667 22.3866 13.0137 22.1287 14.4576L20.8784 21.4576C20.6836 22.5483 19.8284 23.3334 18.835 23.3334H9.08232" stroke="#393C38" stroke-width="2.24" stroke-linecap="round" stroke-linejoin="round"/>
+        <svg class="disliked__pouce" width="26" height="28" viewBox="0 0 26 28" fill="none">
+            <path d="M9.08232 11.6667V23.3334M9.08232 11.6667L4.91467 11.6667V23.3334H9.08232M9.08232 11.6667L14.4957 4.59492C15.0093 3.92389 15.8174 3.63542 16.5833 3.84977L16.6327 3.86365C18.0308 4.255 18.6605 6.07904 17.8613 7.42162L15.3338 11.6667H20.0853C21.4003 11.6667 22.3866 13.0137 22.1287 14.4576L20.8784 21.4576C20.6836 22.5483 19.8284 23.3334 18.835 23.3334H9.08232" stroke=${colorPrimaryLike} stroke-width="2.24" stroke-linecap="round" stroke-linejoin="round"/>
         </svg><span class="counterup">${like[i]}</span>
     </button>
 </div>
+<form><textarea rows="4"></textarea><input type="submit" value="✔"></form>
 </section>
 <br/>
 `;
-
+        const buttonPlus = document.querySelectorAll('.logo-plus');
+        const inputSubmit = document.querySelectorAll('input[type=submit]');
+        const formulaire = document.querySelectorAll('form');
+        console.log(formulaire);
+        const publishBy = document.querySelectorAll('.publish-by');
+        let svgLike = document.querySelector('liked__pouce');
         const buttonLike = document.querySelectorAll('.li-ke');
         const buttondisLike = document.querySelectorAll('.dis-like');
-
+        const buttonUpComment = document.querySelectorAll('button-up-comment');
         function disLikeButton(j) {
             const counterdown = document.querySelectorAll('.counterdown');
             const counterup = document.querySelectorAll('.counterup');
@@ -553,6 +567,25 @@ const reponseJS = {
                 counterup[j].innerHTML = like[j];
             }
         }
+        function buttonUpCommentClick(j){
+          if( counterChange == 0) {
+            counterChange += 1;
+          formulaire[j].style.height = "50px";
+          inputSubmit[j].style.height = "25px";
+          inputSubmit[j].style.width = "25px";
+          buttonPlus[j].style.transform = "rotatez(45deg)";
+        } else if ( counterChange > 0 ) {
+          counterChange = 0;
+          formulaire[j].style.height = "0";
+          inputSubmit[j].style.height = "0";
+          inputSubmit[j].style.width = "0";
+          buttonPlus[j].style.transform = "rotatez(0deg)";
+        }
+        }
+        formulaire[i].addEventListener('submit', function(e){
+          e.preventDefault();
+
+        });
     }
 
     const searchBar = document.createElement('input');
