@@ -14,7 +14,6 @@ async function enAttente() {
   function injectData() {
     for (let i = 0; i < data.users.length; i++) {
       userList.innerHTML += `
-
       <div class="user-card-container">
         <div class="user-card-image-crop">
           <img src="${data.users[i].picture.large}" alt="Profile picture">
@@ -28,7 +27,7 @@ async function enAttente() {
       <span class="user-card-details-city">${data.users[i].location.city} -</span><span class="user-card-details-country">${data.users[i].nat}</span>
       <p class="user-card-details-description">${data.users[i].description}</p>
       </div>
-      <a class="user-card-cta-link" href="#"><div class="user-card-cta"><span class="material-symbols-rounded">
+      <a class="user-card-cta-link" href="contact.html"><div class="user-card-cta"><span class="material-symbols-rounded">
       send
       </span></a></div>
       </div>`;
