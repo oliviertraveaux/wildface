@@ -1,3 +1,0 @@
-
-function injectData() {
-    footerForAll.innerHTML += `
