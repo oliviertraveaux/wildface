@@ -24,6 +24,8 @@
 
   input .search-bar {
     max-width: 600px;
+    height: 690px;
+    overflow-y: scroll;
   }
 
   main {
@@ -34,6 +36,7 @@
     gap: 15px;
     grid-row: 2 / 3;
     grid-column: 3 / 4;
+    height: 690px;
   }
 
   .search-bar {
@@ -42,22 +45,46 @@
   }
 
   .main h1 {
-    padding-top: 15px;
+    padding: 20px 6px;
     grid-row: 2 / 3;
     grid-column: 2 / 3;
   }
 
   .user-card-list {
-    min-width: 400px;
+    display: flex;
+    padding-right: 5px;
+    flex-flow: column nowrap;
+    overflow-y: scroll;
+    /* max-width: 400px; */
     grid-row: 3 / 6;
     grid-column: 2 / 3;
+    height: 690px;
   }
 
+  .user-card-list::-webkit-scrollbar,
+  .user-card-details-description::-webkit-scrollbar {
+    width: 5px; /* width of the entire scrollbar */
+    background-color: transparent;
+  }
+  .user-card-list::-webkit-scrollbar-track,
+  .user-card-details-description::-webkit-scrollbar {
+    /* background: var(--gray-dark); /* color of the tracking area */
+    /*border-radius: 20px; */
+    background-color: transparent;
+  }
+  .user-card-list::-webkit-scrollbar-thumb,
+  .user-card-details-description::-webkit-scrollbar {
+    /*border-radius: 20px; /* roundness of the scroll thumb */
+    /*border: 3px solid var(--green-light); creates padding around scroll thumb*/
+    background-color: transparent;
+  }
   .user-card-container {
     min-width: 300px;
+    margin: 0px 6px;
   }
 
   .user-card-details-description {
+    overflow-y: scroll;
     width: 250px;
   }
 
@@ -207,8 +234,8 @@
       box-shadow: 1px 1px #3e3e3e, 2px 2px #3e3e3e, 3px 3px #3e3e3e,
         4px 4px #3e3e3e, 5px 5px #3e3e3e, 6px 6px #3e3e3e, 7px 7px #3e3e3e,
         8px 8px #3e3e3e;
-      -webkit-transform: translateX(-8px) translateY(-8px);
-      transform: translateX(-8px) translateY(-8px);
+      -webkit-transform: translateX(-6px) translateY(-6px);
+      transform: translateX(-6px) translateY(-6px);
     }
   }
   @keyframes shadow-pop-br {
@@ -227,8 +254,8 @@
       box-shadow: 1px 1px #3e3e3e, 2px 2px #3e3e3e, 3px 3px #3e3e3e,
         4px 4px #3e3e3e, 5px 5px #3e3e3e, 6px 6px #3e3e3e, 7px 7px #3e3e3e,
         8px 8px #3e3e3e;
-      -webkit-transform: translateX(-8px) translateY(-8px);
-      transform: translateX(-8px) translateY(-8px);
+      -webkit-transform: translateX(-6px) translateY(-6px);
+      transform: translateX(-6px) translateY(-6px);
     }
   }
 }

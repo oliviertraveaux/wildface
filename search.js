@@ -1,3 +1,5 @@
+let contactedUser = {};
+
 // FETCH JSON DATA
 
 async function enAttente() {
@@ -12,7 +14,6 @@ async function enAttente() {
   function injectData() {
     for (let i = 0; i < data.users.length; i++) {
       userList.innerHTML += `
-
       <div class="user-card-container">
         <div class="user-card-image-crop">
           <img src="${data.users[i].picture.large}" alt="Profile picture">
@@ -23,13 +24,37 @@ async function enAttente() {
       </p>
       <p class="user-card-job">${data.users[i].job}</p>
       <p class="user-card-details">
-      <span class="user-card-details-city">${data.users[i].location.city} -</span> <span class="user-card-details-city></span><span class="user-card-details-country>${data.users[i].nat}</span>
+      <span class="user-card-details-city">${data.users[i].location.city} - </span><span class="user-card-details-country">${data.users[i].nat}</span>
       <p class="user-card-details-description">${data.users[i].description}</p>
       </div>
-      <a href="contact.html"><div class="user-card-cta"><span class="material-symbols-rounded">
+      <a class="user-card-cta-link" href="contact.html"><div class="user-card-cta"><span class="material-symbols-rounded">
       send
       </span></a></div>
       </div>`;
+    }
+    // GET USER ID FOR CONTACT FORM
+    console.log(data.users.lenght);
+
+    // LISTEN TO CLICK
+    const cta = document.querySelectorAll(
+      ".user-card-container .material-symbols-rounded"
+    );
+    console.log(cta.length);
+    for (let i = 0; i < cta.length; i++) {
+      cta[i].addEventListener("click", () => {
+        // MAKE SURE LOCAL STORAGE DATA IS EMPTY FOR CONTACTEDUSER
+        localStorage.removeItem("contactedUser");
+        console.log(data.users[i]);
+        // MAKE ASSIGN THE VALUE OF THE CONST CONTACTED USER
+        contactedUser = data.users[i];
+        console.log(contactedUser);
+        // WE MAKE THIS CONST A STRING
+        let contactedUser_serialized = JSON.stringify(contactedUser);
+        console.log(contactedUser_serialized);
+        // WE SET THE DATA IN LOCAL STORAGE
+        localStorage.setItem("contactedUser", contactedUser_serialized);
+        console.log(localStorage);
+      });
     }
   }
 
@@ -75,6 +100,3 @@ function filterUsers() {
     }
   }
 }
-
-const usersLambda = data.users.map((user) => user.name);
-console.log(usersLambda);
