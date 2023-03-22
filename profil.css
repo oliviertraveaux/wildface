@@ -9,15 +9,19 @@ body {
   background-color: var(--background-white);
 }
 
+main {
+  margin: 85px 10px;
+  text-align: justify;
+}
 /* header nav {
   display: grid;
   grid-template-columns: 50px 100px;
   margin-left: 3%;
 } */
 
-header nav button .material-symbols-rounded {
+/* header nav button .material-symbols-rounded {
   padding: 4px 0 1px 6px;
-}
+} */
 
 header nav button {
   border-radius: 50%;
@@ -30,7 +34,7 @@ header nav button {
 main .carreer {
   display: flex;
   justify-content: space-around;
-  width: 89%;
+  width: 100%;
 }
 
 main .carreer div {
@@ -66,7 +70,7 @@ main article p {
 }
 
 main .banner {
-  width: 96%;
+  width: 100%;
   height: 140px;
   border: solid 2px black;
   border-radius: 4px;
@@ -90,16 +94,17 @@ main .banner .picture {
   background-size: cover;
 }
 
-main {
-  margin: 95px 10px;
-  text-align: justify;
+
+main .information h2{
+  padding-top: 25%;
 }
 
 main .information .biographie {
   display: grid;
   grid-template-rows: 50px 50px;
-  grid-template-columns: 1.3fr 1fr 1fr 1fr;
+  grid-template-columns: 1.3fr 1fr 1.2fr 1fr;
   text-align: start;
+  width: 100%;
 }
 
 main .information .biographie .subject {
@@ -120,7 +125,7 @@ h2 {
   font-size: medium;
 }
 
-@media screen and (min-width: 321px) {
+@media screen and (min-width: 421px) {
   main .information {
     padding: 0 25%;
     display: flex;
@@ -129,11 +134,15 @@ h2 {
   }
   main .information .biographie {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    width: 133%;
+    width: 145%;
     grid-column-gap: 35px;
   }
   main .carreer div {
-    justify-content: space-evenly;
+    justify-content: space-around;
+  }
+
+  main .information h2 {
+    padding-top: 25%;
   }
 }
 
@@ -151,3 +160,4 @@ h2 {
   grid-row: 2 / 4 !important;
   grid-column: 2 / 3 !important;
 }
+
