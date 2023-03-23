@@ -1,8 +1,9 @@
 @import url(variable.css);
 
 .last__actuality_title {
-    font-family: var(--font-primary);
+    font-family: var(--font-title);
     font-size: large;
+    font-weight: 100;
     padding: 5px 8%;
 }
 
@@ -261,5 +262,18 @@ form textarea {
 
     .actuality aside.publish-by p.author {
         top: 10px;
+    }
+
+    .suggest-widget-text {
+        display: flex;
+        flex-flow: column wrap;
+        gap: 2px;
+        padding: 20px;
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+    }
+
+    .event-widget-text {
+        font-family: "Open Sans", sans-serif;
     }
 }
