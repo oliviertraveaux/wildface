@@ -68,7 +68,7 @@
              },
              job: "Designer UX",
              description: "👋 Skilled writer with a talent for crafting engaging content.",
-             poste: "Authentic leadership means staying true to oneself and one's values, creating an environment of trust, and inspiring others to follow. Communication skills are essential in all aspects of professional and personal life. Knowing how to actively listen, communicate clearly and effectively is a competitive advantage.",
+             poste: "Authentic leadership means staying true to oneself and one's values, creating an environment of trust, and inspiring others to follow. Communication skills are essential in all aspects of professional quest.",
              location: {
                street: {
                  number: 5996,
@@ -127,7 +127,7 @@
              },
              job: "Doctor",
              description: "👋 Digital media expert with a strong background in social media marketing.",
-             poste: "Mental and physical well-being is essential to maintaining good health and optimal productivity. Taking care of oneself should be an absolute priority. Teamwork is essential to achieving organizational goals. Collaboration, effective communication, and building strong relationships are key skills for success in a team work environment.",
+             poste: "Mental and physical well-being is essential to maintaining good health and optimal productivity. Taking care of oneself should be an absolute priority. Teamwork is essential to achieving organizational goals.",
              location: {
                street: {
                  number: 5113,
@@ -186,7 +186,7 @@
              },
              job: "React Dev",
              description: "👋 Strategic thinker with a talent for developing effective marketing campaigns.",
-             poste: "Emotional intelligence is important for success in both professional and personal life. Understanding one's own emotions and those of others can help strengthen relationships and improve communication. Problem-solving is an essential skill for all professionals. The ability to identify problems, find creative solutions, and implement actions is a valuable asset.",
+             poste: "Emotional intelligence is important for success in both professional and personal life. Understanding one's own emotions and those of others can help strengthen relationships and improve.",
              location: {
                street: {
                  number: 9421,
@@ -245,7 +245,7 @@
              },
              job: "Front-End",
              description: "👋 Creative designer with a keen eye for detail.",
-             poste: "Time management is essential for productivity and success. Knowing how to prioritize tasks, set clear goals, and effectively use available time can help maximize results. Change management is important for organizations that are seeking to adapt and evolve. Leadership, communication, and problem-solving skills are essential for effectively managing change.",
+             poste: "Time management is essential for productivity and success. Knowing how to prioritize tasks, set clear goals, and effectively use available time can help maximize results. Change management is important.",
              location: {
                street: {
                  number: 1901,
@@ -304,7 +304,7 @@
              },
              job: "UX / UI Designer",
              description: "👋 Versatile project manager with excellent communication skills.",
-             poste: "Digital marketing is a constantly evolving field. Data analytics, content marketing, and social media skills are essential for success in this field. Negotiation skills are essential for success in business. Knowing how to negotiate effectively can help obtain better deals, strengthen relationships, and maximize results.",
+             poste: "Digital marketing is a constantly evolving field. Data analytics, content marketing, and social media skills are essential for success in this field. Negotiation skills are essential for success in business.",
              location: {
                street: {
                  number: 645,
