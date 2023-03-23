@@ -54,7 +54,7 @@ const reponseJS = {
         value: "930.357.382-69"
       },
       picture: {
-        large: "https://randomuser.me/api/portraits/women/95.jpg",
+        large: "https://picsum.photos/1200/800",
         medium: "https://randomuser.me/api/portraits/med/women/95.jpg",
         thumbnail: "https://randomuser.me/api/portraits/thumb/women/95.jpg"
       },
@@ -113,7 +113,7 @@ const reponseJS = {
         value: "78 280845 H 804"
       },
       picture: {
-        large: "https://randomuser.me/api/portraits/women/94.jpg",
+        large: "https://picsum.photos/1200/800",
         medium: "https://randomuser.me/api/portraits/med/women/94.jpg",
         thumbnail: "https://randomuser.me/api/portraits/thumb/women/94.jpg"
       },
@@ -231,7 +231,7 @@ const reponseJS = {
         value: "264335479050"
       },
       picture: {
-        large: "https://randomuser.me/api/portraits/women/52.jpg",
+        large: "https://picsum.photos/1200/801",
         medium: "https://randomuser.me/api/portraits/med/women/52.jpg",
         thumbnail: "https://randomuser.me/api/portraits/thumb/women/52.jpg"
       },
@@ -349,7 +349,7 @@ const reponseJS = {
         value: null
       },
       picture: {
-        large: "https://randomuser.me/api/portraits/men/71.jpg",
+        large: "https://picsum.photos/1200/802",
         medium: "https://randomuser.me/api/portraits/med/men/71.jpg",
         thumbnail: "https://randomuser.me/api/portraits/thumb/men/71.jpg"
       },
@@ -467,7 +467,7 @@ const reponseJS = {
         value: "106-85-3935"
       },
       picture: {
-        large: "https://randomuser.me/api/portraits/men/78.jpg",
+        large: "https://picsum.photos/1200/804",
         medium: "https://randomuser.me/api/portraits/med/men/78.jpg",
         thumbnail: "https://randomuser.me/api/portraits/thumb/men/78.jpg"
       },
