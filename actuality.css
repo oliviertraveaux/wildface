@@ -14,10 +14,12 @@ form {
 }
 
 .logo-plus {
+    cursor: pointer;
     transition: all .5s ease-in-out;
 }
 
-form input[type=submit] {
+form input[type=button] {
+    cursor: pointer;
     transition-delay: 1s;
     transition: all .5s ease-in-out;
     height: 0;
@@ -27,9 +29,6 @@ form input[type=submit] {
     bottom: 0;
     border-radius: 25px 25px 50px 10px;
 }
-
-    
-
 
 form textarea {
     width: 100%;
@@ -136,10 +135,12 @@ form textarea {
 
 .actuality div.dislike-like .dis-like {
     background-color: var(--pink-light);
+    cursor: pointer;
 }
 
 .actuality div.dislike-like .li-ke {
     background-color: var(--green-light);
+    cursor: pointer;
 }
 
 .actuality div.dislike-like .dis-like span.counter,
@@ -165,7 +166,6 @@ form textarea {
     box-shadow: var(--box-shadow-publication);
     padding: 0 7px;
 }
-
 
 @media screen and (min-width:764px) {
 
@@ -209,6 +209,7 @@ form textarea {
 
     .section-new {
         height: 90vh;
+        width: 100%;
         overflow-y: scroll;
     }
 
