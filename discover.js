@@ -1,10 +1,3 @@
-//Il est possible de remplir différentes informations avec des profils aléatoires sur une page HTML en utilisant plusieurs méthodes, notamment:
-
-//Utiliser une base de données: Créez une base de données qui stocke les informations de différents profils aléatoires. Vous pouvez ensuite créer une page HTML qui récupère les informations aléatoires de la base de données et les affiche sur la page.
-
-//Utiliser JavaScript: Vous pouvez utiliser JavaScript pour générer des profils aléatoires et remplir les informations sur la page HTML. Pour ce faire, vous pouvez créer des fonctions qui génèrent des informations aléatoires telles que les noms, les adresses, les numéros de téléphone, etc. et les utiliser pour remplir les champs sur la page HTML.
-
-//Utiliser des services tiers: Il existe des services en ligne qui génèrent des profils aléatoires. Vous pouvez utiliser ces services pour générer des profils aléatoires et remplir les informations sur la page HTML. Vous pouvez utiliser des API pour récupérer les informations aléatoires à partir de ces services et les afficher sur la page HTML.
     const reponseJS = {
         users: [
            {
@@ -16,7 +9,7 @@
              },
              job: "Developer",
              description: "👋 Experienced marketing professional with a knack for data analysis.",
-             poste: "Continuous learning is key to staying relevant in a constantly evolving world. Whether it's developing new skills or improving the ones we already have, continuous learning helps us evolve and stay competitive.",
+             poste: "Continuous learning is key to staying relevant in a constantly evolving world. Whether it's developing new skills or improving the ones we already have, continuous learning helps us evolve and stay competitive but never forget serge the mitho.",
              location: {
                street: {
                  number: 4414,
@@ -75,7 +68,7 @@
              },
              job: "Designer UX",
              description: "👋 Skilled writer with a talent for crafting engaging content.",
-             poste: "Authentic leadership means staying true to oneself and one's values, creating an environment of trust, and inspiring others to follow. Communication skills are essential in all aspects of professional and personal life. Knowing how to actively listen, communicate clearly and effectively is a competitive advantage.",
+             poste: "Authentic leadership means staying true to oneself and one's values, creating an environment of trust, and inspiring others to follow. Communication skills are essential in all aspects of professional life. Knowing how to actively listen.",
              location: {
                street: {
                  number: 5996,
@@ -134,7 +127,7 @@
              },
              job: "Doctor",
              description: "👋 Digital media expert with a strong background in social media marketing.",
-             poste: "Mental and physical well-being is essential to maintaining good health and optimal productivity. Taking care of oneself should be an absolute priority. Teamwork is essential to achieving organizational goals. Collaboration, effective communication, and building strong relationships are key skills for success in a team work environment.",
+             poste: "Mental and physical well-being is essential to maintaining good health and optimal productivity. Taking care of oneself should be an absolute priority. Teamwork is essential to achieving organizational goals. Collaboration.",
              location: {
                street: {
                  number: 5113,
@@ -193,7 +186,7 @@
              },
              job: "React Dev",
              description: "👋 Strategic thinker with a talent for developing effective marketing campaigns.",
-             poste: "Emotional intelligence is important for success in both professional and personal life. Understanding one's own emotions and those of others can help strengthen relationships and improve communication. Problem-solving is an essential skill for all professionals. The ability to identify problems, find creative solutions, and implement actions is a valuable asset.",
+             poste: "Emotional intelligence is important for success in both professional and personal life. Understanding one's own emotions and those of others can help strengthen relationships and improve communication. Problem-solving.",
              location: {
                street: {
                  number: 9421,
@@ -252,7 +245,7 @@
              },
              job: "Front-End",
              description: "👋 Creative designer with a keen eye for detail.",
-             poste: "Time management is essential for productivity and success. Knowing how to prioritize tasks, set clear goals, and effectively use available time can help maximize results. Change management is important for organizations that are seeking to adapt and evolve. Leadership, communication, and problem-solving skills are essential for effectively managing change.",
+             poste: "Time management is essential for productivity and success. Knowing how to prioritize tasks, set clear goals, and effectively use available time can help maximize results. Change management is important for organizations of the gods of olympia, they need to sustain.",
              location: {
                street: {
                  number: 1901,
@@ -311,7 +304,7 @@
              },
              job: "UX / UI Designer",
              description: "👋 Versatile project manager with excellent communication skills.",
-             poste: "Digital marketing is a constantly evolving field. Data analytics, content marketing, and social media skills are essential for success in this field. Negotiation skills are essential for success in business. Knowing how to negotiate effectively can help obtain better deals, strengthen relationships, and maximize results.",
+             poste: "Digital marketing is a constantly evolving field. Data analytics, content marketing, and social media skills are essential for success in this field. Negotiation skills are essential for success in business. Knowing how to code yeah i love coding like wtf.",
              location: {
                street: {
                  number: 645,
@@ -370,7 +363,7 @@
              },
              job: "Back-End Dev",
              description: "👋 VExperienced event planner with a talent for executing successful events.",
-             poste: "Critical thinking is important for informed decision-making. The ability to analyze information, evaluate options, and make evidence-based decisions can help avoid costly mistakes.",
+             poste: "Critical thinking is important for informed decision-making. The ability to analyze information, evaluate options, and make evidence-based decisions can help avoid costly mistakes chalut 'chai jimmy cha va ou quoi.",
              location: {
                street: {
                  number: 9069,
@@ -429,7 +422,7 @@
              },
              job: "Data Analyst",
              description: "👋 Versatile project manager with excellent communication skills.",
-             poste: "Creativity is a valuable skill in all professional fields. The ability to think innovatively, generate new ideas, and creatively solve problems can help differentiate a business or individual from the competition.",
+             poste: "Creativity is a valuable skill in all professional fields. The ability to think innovatively, generate new ideas, and creatively solve problems can help differentiate a business or individual from the competition by the begenning of the goat GSP .",
              location: {
                street: {
                  number: 1796,

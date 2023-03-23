@@ -4,9 +4,12 @@
     margin: 0;
     box-sizing: border-box;
     list-style: none;
-    font-family: var(--font-primary): ;
+    font-family: var(--font-primary);
 }
 
+body {
+  background-color: white;
+}
 h1 {
   font-family: var(--font-title);
   font-size: 20px;
@@ -53,7 +56,8 @@ div {
 
 img {
   position: absolute;
-  top: 16%;
+  top: 14%;
+  left: 33%;
   width: 125px;
   height: 125px;
   border: 4px solid black;
@@ -65,16 +69,16 @@ img {
 
 .prenom {
   position: absolute;
-  top: 42%;
-  left: 28%;
+  top: 39%;
+  left: 40%;
   font-size: larger;
   font-family: SourceSansPro-ExtraLight;
   font-weight: bold;
 }
 .nom {
   position: absolute;
-  top: 42%;
-  right: 28%;
+  top: 43%;
+  left: 40%;
   font-size: larger;
   font-family: SourceSansPro-ExtraLight;
   font-weight: bold;
@@ -83,7 +87,7 @@ img {
 .job {
   position: absolute;
   top: 48%;
-  left: 32%;
+  left: 36%;
   font-weight: lighter;
   font-size: large;
   font-family: SourceSansPro-ExtraLight;
@@ -108,19 +112,16 @@ img {
   position: absolute;   
   bottom: 36%;   
   right: 10%;   
-  line-height: 2.5;   
-  padding: 3 10px;   
-  font-size: 78%;   
-  font-family: Ultraregular;   
-  font-weight: lighter ;   
-  text-align: center;   
-  text-shadow: 0.2px 0.2px 0.2px #000;   
-  border: 3px solid #000000;   
-  border-radius: 10px;   
-  background-color: #FDC0D2;   
-  background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));   box-shadow: #393C38;
-  box-shadow: 0.5px 0.5px 0.5px #000;
-  transition: all .5s;
+  border-radius: 25px;
+  width: 75px;
+  height: 37px;
+  border: 1.5px solid;
+  font-size: large;
+  align-self: flex-end;     
+  background-color: #FDC0D2;
+  font-family: SourceSansPro-ExtraLight;
+  font-weight: lighter; 
+  cursor: pointer;  
 }
 
 
@@ -130,6 +131,7 @@ img {
   padding-left: 2%;
   border:(.5);
   font-weight: lighter;
+  width: 250px;
 }
 
 .aPropos {
@@ -139,7 +141,6 @@ img {
 }
 
 .paraPropo {
-  width: 80%;
   font-family: SourceSansPro-ExtraLight;
   font-size: 85%;
 }
