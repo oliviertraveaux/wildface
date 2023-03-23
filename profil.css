@@ -70,7 +70,8 @@ main article p {
   margin: 5% 3%;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-weight: 100;
 }
 
@@ -99,8 +100,7 @@ main .banner .picture {
   background-size: cover;
 }
 
-
-main .information h2{
+main .information h2 {
   padding-top: 75px;
 }
 
@@ -124,8 +124,8 @@ main article h2 {
 main div h2 {
   padding-bottom: 40px;
 }
-h1,
-h2 {
+main h1,
+main h2 {
   font-family: var(--font-title);
   font-size: medium;
 }
@@ -163,4 +163,3 @@ h2 {
   grid-row: 2 / 4 !important;
   grid-column: 2 / 3 !important;
 }
-

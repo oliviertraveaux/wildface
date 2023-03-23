@@ -9,7 +9,7 @@
              },
              job: "Developer",
              description: "👋 Experienced marketing professional with a knack for data analysis.",
-             poste: "Continuous learning is key to staying relevant in a constantly evolving world. Whether it's developing new skills or improving the ones we already have, continuous learning helps us evolve and stay competitive but never forget serge the mitho.",
+             poste: "Continuous learning is key to staying relevant in a constantly evolving world. Whether it's developing new skills or improving the ones we already have, continuous learning helps us evolve and stay competitive.",
              location: {
                street: {
                  number: 4414,
@@ -68,7 +68,7 @@
              },
              job: "Designer UX",
              description: "👋 Skilled writer with a talent for crafting engaging content.",
-             poste: "Authentic leadership means staying true to oneself and one's values, creating an environment of trust, and inspiring others to follow. Communication skills are essential in all aspects of professional life. Knowing how to actively listen.",
+             poste: "Authentic leadership means staying true to oneself and one's values, creating an environment of trust, and inspiring others to follow. Communication skills are essential in all aspects of professional and personal life. Knowing how to actively listen, communicate clearly and effectively is a competitive advantage.",
              location: {
                street: {
                  number: 5996,
@@ -127,7 +127,7 @@
              },
              job: "Doctor",
              description: "👋 Digital media expert with a strong background in social media marketing.",
-             poste: "Mental and physical well-being is essential to maintaining good health and optimal productivity. Taking care of oneself should be an absolute priority. Teamwork is essential to achieving organizational goals. Collaboration.",
+             poste: "Mental and physical well-being is essential to maintaining good health and optimal productivity. Taking care of oneself should be an absolute priority. Teamwork is essential to achieving organizational goals. Collaboration, effective communication, and building strong relationships are key skills for success in a team work environment.",
              location: {
                street: {
                  number: 5113,
@@ -186,7 +186,7 @@
              },
              job: "React Dev",
              description: "👋 Strategic thinker with a talent for developing effective marketing campaigns.",
-             poste: "Emotional intelligence is important for success in both professional and personal life. Understanding one's own emotions and those of others can help strengthen relationships and improve communication. Problem-solving.",
+             poste: "Emotional intelligence is important for success in both professional and personal life. Understanding one's own emotions and those of others can help strengthen relationships and improve communication. Problem-solving is an essential skill for all professionals. The ability to identify problems, find creative solutions, and implement actions is a valuable asset.",
              location: {
                street: {
                  number: 9421,
@@ -245,7 +245,7 @@
              },
              job: "Front-End",
              description: "👋 Creative designer with a keen eye for detail.",
-             poste: "Time management is essential for productivity and success. Knowing how to prioritize tasks, set clear goals, and effectively use available time can help maximize results. Change management is important for organizations of the gods of olympia, they need to sustain.",
+             poste: "Time management is essential for productivity and success. Knowing how to prioritize tasks, set clear goals, and effectively use available time can help maximize results. Change management is important for organizations that are seeking to adapt and evolve. Leadership, communication, and problem-solving skills are essential for effectively managing change.",
              location: {
                street: {
                  number: 1901,
@@ -304,7 +304,7 @@
              },
              job: "UX / UI Designer",
              description: "👋 Versatile project manager with excellent communication skills.",
-             poste: "Digital marketing is a constantly evolving field. Data analytics, content marketing, and social media skills are essential for success in this field. Negotiation skills are essential for success in business. Knowing how to code yeah i love coding like wtf.",
+             poste: "Digital marketing is a constantly evolving field. Data analytics, content marketing, and social media skills are essential for success in this field. Negotiation skills are essential for success in business. Knowing how to negotiate effectively can help obtain better deals, strengthen relationships, and maximize results.",
              location: {
                street: {
                  number: 645,
@@ -363,7 +363,7 @@
              },
              job: "Back-End Dev",
              description: "👋 VExperienced event planner with a talent for executing successful events.",
-             poste: "Critical thinking is important for informed decision-making. The ability to analyze information, evaluate options, and make evidence-based decisions can help avoid costly mistakes chalut 'chai jimmy cha va ou quoi.",
+             poste: "Critical thinking is important for informed decision-making. The ability to analyze information, evaluate options, and make evidence-based decisions can help avoid costly mistakes.",
              location: {
                street: {
                  number: 9069,
@@ -422,7 +422,7 @@
              },
              job: "Data Analyst",
              description: "👋 Versatile project manager with excellent communication skills.",
-             poste: "Creativity is a valuable skill in all professional fields. The ability to think innovatively, generate new ideas, and creatively solve problems can help differentiate a business or individual from the competition by the begenning of the goat GSP .",
+             poste: "Creativity is a valuable skill in all professional fields. The ability to think innovatively, generate new ideas, and creatively solve problems can help differentiate a business or individual from the competition.",
              location: {
                street: {
                  number: 1796,
@@ -476,45 +476,40 @@
 
 
 //informations du profil sur la page
-let profilePic = document.querySelector('img');
+let profilePic = document.querySelector("img");
 profilePic.innerHTML = reponseJS.users[0].picture.large;
-let prenom = document.querySelector('.prenom');
+let prenom = document.querySelector(".prenom");
 prenom.innerHTML = reponseJS.users[0].name.first;
-let nom = document.querySelector('.nom');
+let nom = document.querySelector(".nom");
 nom.innerHTML = reponseJS.users[0].name.last;
-let job = document.querySelector('.job');
+let job = document.querySelector(".job");
 job.innerHTML = reponseJS.users[0].job;
-let age = document.querySelector('.age');
-age.innerHTML = 'Age ' + reponseJS.users[0].dob.age;
-let from = document.querySelector('.from');
-from.innerHTML = 'Pays ' + reponseJS.users[0].location.country;
-let paraPropo = document.querySelector('.paraPropo');
+let age = document.querySelector(".age");
+age.innerHTML = "Age " + reponseJS.users[0].dob.age;
+let from = document.querySelector(".from");
+from.innerHTML = "Pays " + reponseJS.users[0].location.country;
+let paraPropo = document.querySelector(".paraPropo");
 paraPropo.innerHTML = reponseJS.users[0].description + reponseJS.users[0].poste;
 
-const recharger = document.querySelector('main')
-recharger.addEventListener('click',
-() => {
-    console.log('click');
-    recharg();
-    const randomIndex = Math.floor(Math.random() * reponseJS.users.length);
+
+const recharger = document.querySelector("main");
+recharger.addEventListener("click", () => {
+  console.log("click");
+  recharg();
+  const randomIndex = Math.floor(Math.random() * reponseJS.users.length);
   const randomUser = reponseJS.users[randomIndex];
   profilePic.src = randomUser.picture.large;
   prenom.textContent = randomUser.name.first;
   nom.textContent = randomUser.name.last;
   job.textContent = randomUser.job;
-  age.textContent = 'Age ' + randomUser.dob.age;
-  from.textContent = 'Pays ' + randomUser.location.country;
-  paraPropo.textContent = randomUser.description + ' ' + randomUser.poste;
-})
+  age.textContent = "Age " + randomUser.dob.age;
+  from.textContent = "Pays " + randomUser.location.country;
+  paraPropo.textContent = randomUser.description + " " + randomUser.poste;
+});
 
 function recharg() {
-  let i = 0; 
+  let i = 0;
   let hasard = 1 + Math.floor(8 * Math.random());
-  i = i + hasard
-  console.log(i)
+  i = i + hasard;
+  console.log(i);
 }
-
-
-
-
-      
