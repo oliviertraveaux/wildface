@@ -45,7 +45,8 @@ div {
 .search-bar {
   height: 40px;
   min-width: 100%;
-  padding: 0 7px;
+  margin-top: 25px;
+  padding: 0px 7px;
   background-image: url("img/search.svg");
   background-repeat: no-repeat;
   background-size: 25px;
