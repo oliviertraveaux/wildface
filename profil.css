@@ -34,7 +34,7 @@ header nav button {
 main .carreer {
   display: flex;
   justify-content: space-around;
-  width: 100%;
+  width: 147%;
 }
 
 main .carreer div {
@@ -67,6 +67,10 @@ main .carreer .pink .material-symbols-rounded {
 main article p {
   line-height: 20px;
   margin: 5% 3%;
+}
+
+h1, h2 {
+  font-weight: 100;
 }
 
 main .banner {
@@ -148,8 +152,8 @@ h2 {
 
 /* DESKTOP PAGE SPECIFICATION */
 
-.main .main-profil {
-}
+/* .main .main-profil {
+} */
 
 .profil-widget {
   display: none !important;
