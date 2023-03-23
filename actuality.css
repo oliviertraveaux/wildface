@@ -30,9 +30,6 @@ form input[type=button] {
     border-radius: 25px 25px 50px 10px;
 }
 
-    
-
-
 form textarea {
     width: 100%;
     min-height: 50px;
@@ -43,8 +40,6 @@ form textarea {
     display: flex;
     flex-direction: column;
 } */
-
-
 
 .actuality {
     background-color: #FFF;
@@ -171,7 +166,6 @@ form textarea {
     box-shadow: var(--box-shadow-publication);
     padding: 0 7px;
 }
-
 
 @media screen and (min-width:764px) {
 

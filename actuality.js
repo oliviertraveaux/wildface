@@ -486,9 +486,6 @@ let colorPrimaryDislike = "#393C38";
 let colorPrimaryLikeChange = "#FF0000";
 let colorPrimaryDislikeChange = "#FFF";
 
-// sectionNew.innerHTML += `
-//     <h2 class="last__actuality_title">Dernière actualités</h2>`
-
 for (let i = 0; i < 8; i++) {
 
   let dislike = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
