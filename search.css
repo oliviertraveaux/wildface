@@ -1,3 +1,5 @@
+@import url(variable.css);
+
 input:focus,
 textarea:focus,
 select:focus {
@@ -11,7 +13,13 @@ span,
 div {
   color: var(--gray-dark);
 }
-nav,
+
+p,
+span,
+div {
+  font-family: "Open Sans", sans-serif;
+}
+
 .event-widget,
 .profil-widget,
 .suggest-widget {

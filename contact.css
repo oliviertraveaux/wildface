@@ -1,7 +1,6 @@
 @import url("variable.css");
 
-* {
-    
+* {   
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -12,13 +11,20 @@
     font-family: Ultraregular;
     src: url("font/Ultra-Regular.ttf");
 }
+
 @font-face {
-    font-family: SourceSansPro;
-    src: url("SourceSansPro-Black.ttf");
+    font-family: SourceSansPro-ExtraLight;
+    src: url("font/SourceSansPro-Regular.ttf");
 }
 
 body {
+    font-family: SourceSansPro-ExtraLight;
     background-color: var(--background-white);
+    min-height:100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
 }
 
 nav button {
@@ -32,8 +38,7 @@ nav button {
 }
 
 nav button .material-symbols-rounded {
-    padding: 6% 0% 1% 25%;
-    
+    padding: 6% 0% 1% 25%;   
 }
 
 main header h1 {
@@ -47,74 +52,79 @@ main header h1 {
 
 main header h2 {
     text-align: center;
-    font-family: SourceSansPro;
-    font-size: 125%;
+    font-size: 170%;
     font-weight: bold;
     color: var(--gray-dark);
     padding: 7%;
+    margin-top: 10%;
 }
 
 main {
     display: flex;
     width: 100%;
-    height: 100vh;
-    
     flex-direction: column;
     align-items: center;
     padding: 2% 0 5% 0;
+    height: calc(100vh - 50px);
 }
 
-main form {
-    display: flex;
-    flex-direction: column;
+main form  {
     width: 80%;
-    height: 70%;
-    
-    
-}
-
-main form div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 10%;
-    align-items: center;
+    padding-top: 4%;
+    gap: 5px;
 }
 
-main form div input {
-    border-radius: 4px; 
+main form input[type=text], main form input[type=email] {
+    border-radius: 20px; 
     box-shadow: var(--box-shadow-publication);
     width: 60%;
-    height: 50%;
+    text-align: center;
+    border-color: transparent;
+    margin: 0 auto;
 }
 
-main form div label {
-    padding: 3%;
-    font-family: SourceSansPro;
-
+main form input[type=email] {
+    margin: 0 auto 5px auto;
 }
 
-main form #message {
+main form label:nth-child(1), main form label:nth-child(3) {
+    padding: 2% 0 1% 0;
+    margin: 0 20%;
+}
+
+main form textarea {
     border-radius: 4px; 
     box-shadow: var(--box-shadow-publication);
-    width: 85%;
+    width: 100%;
     height: 17vh;
+    margin: 0 auto 5px auto;
 }
 
-main form .submitButton {
-    border-radius: 4px; 
-    box-shadow: var(--box-shadow-publication);
-    width: 50px;
-    height: 20px; 
+.message {
+    /* margin: 0 5%; */
+    align-self: flex-start;
 }
 
-main form .button {
-    display: flex;
-    
+main form input[type=submit] {
+    border-radius: 4px;
+    width: 55px;
+    align-self: flex-end;
 }
 
+/* footer {
+  position: fixed; 
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2%;
+  background-color: var(--pink-light);
+  font-size: 80%;
+  font-weight: bold;
+}
 
-
-
-
-
+footer p {
+    padding-left: 3%;
+} */

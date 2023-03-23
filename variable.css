@@ -1,38 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: var(--font-primary);
+  text-decoration: none;
+  color: var(--gray-dark);
+}
+
 :root {
-/*---------------------- Couleurs ----------------*/
---background-white : #FCF4E7;
---pink-light : #FDC0D2;
---blue-light : #9FBFFF;
---green-light : #83B0B8;
---yellow : #F4C552;
---gray-light  : #E5E5E5;
---gray-dark  : #393C38;  /*(drop shadow et border)*/
-/*------------------- margin padding -------------------*/
-/*--padding-button: ;
+  /*---------------------- Couleurs ----------------*/
+  --background-white: #fcf4e7;
+  --pink-light: #fdc0d2;
+  --blue-light: #9fbfff;
+  --green-light: #83b0b8;
+  --yellow: #f4c552;
+  --gray-light: #e5e5e5;
+  --gray-dark: #393c38; /*(drop shadow et border)*/
+  /*------------------- margin padding -------------------*/
+  /*--padding-button: ;
 --margin-button: ;
 --border-radius: ;*/
 
-
-
-/*---------------- shadow et box ---------------*/
---box-shadow-publication: 3px 3px 0px 0px #393C38;
-/*---------------------- Button ---------------*/
-    --border-radius: 50%;
-    --solid-border-radius: 20px;
-    --height: 40px;
-    --width: 40px;
-    --margin-top: 33%;
-    --background-color: #fff;
-/*-------------------- font ---------------------*/
---font-primary: SourceSansPro-ExtraLight;
---font-title: Ultraregular;
+  /*---------------- shadow et box ---------------*/
+  --box-shadow-publication: 3px 3px 0px 0px #393c38;
+  /*---------------------- Button ---------------*/
+  --border-radius: 50%;
+  --solid-border-radius: 20px;
+  --height: 40px;
+  --width: 40px;
+  --margin-top: 33%;
+  --background-color: #fff;
+  /*-------------------- font ---------------------*/
+  --font-primary: SourceSansPro-ExtraLight;
+  --font-title: Ultraregular;
 }
 /*-------------------- font ---------------------*/
 @font-face {
-    font-family: SourceSansPro-ExtraLight;
-    src: url("font/SourceSansPro-Regular.ttf");
+  font-family: SourceSansPro-ExtraLight;
+  src: url("font/SourceSansPro-Regular.ttf");
 }
 @font-face {
-    font-family: Ultraregular;
-    src: url("font/Ultra-Regular.ttf");
+  font-family: Ultraregular;
+  src: url("font/Ultra-Regular.ttf");
+}
+
+body {
+  background-color: var(--background-white);
 }
