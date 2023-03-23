@@ -15,17 +15,18 @@ function createDesktopWidget() {
   const profilWidgetImage = document.createElement("img");
   profilWidgetImage.classList.add("profil-widget-image");
   profilWidgetImageContainer.appendChild(profilWidgetImage);
-  profilWidgetImage.src = "https://randomuser.me/api/portraits/med/men/7.jpg";
+  profilWidgetImage.src =
+    "https://randomuser.me/api/portraits/med/women/95.jpg";
   // CREATE PROFIL TEXT
   const profilWidgetText = document.createElement("div");
   profilWidgetText.classList.add("profil-widget-text");
   profilWidget.appendChild(profilWidgetText);
   profilWidgetText.innerHTML = `
-  <p class="widget-title">John Doe</p>
+  <p class="widget-title">Felinta Calvalcanti</p>
   <p class="widget-profil-info">Developer web</p>
   <p class="widget-profil-info">Français</p>
-  <p class="widget-profil-info">30 ans</p>
-  <p class="widget-profil-info">126 abonnés</p>
+  <p class="widget-profil-info">33 ans</p>
+  <p class="widget-profil-info">136 abonnés</p>
   `;
   // CREATE EVENT WIDGET
   const eventWidget = document.createElement("div");

@@ -1,10 +1,3 @@
-//Il est possible de remplir différentes informations avec des profils aléatoires sur une page HTML en utilisant plusieurs méthodes, notamment:
-
-//Utiliser une base de données: Créez une base de données qui stocke les informations de différents profils aléatoires. Vous pouvez ensuite créer une page HTML qui récupère les informations aléatoires de la base de données et les affiche sur la page.
-
-//Utiliser JavaScript: Vous pouvez utiliser JavaScript pour générer des profils aléatoires et remplir les informations sur la page HTML. Pour ce faire, vous pouvez créer des fonctions qui génèrent des informations aléatoires telles que les noms, les adresses, les numéros de téléphone, etc. et les utiliser pour remplir les champs sur la page HTML.
-
-//Utiliser des services tiers: Il existe des services en ligne qui génèrent des profils aléatoires. Vous pouvez utiliser ces services pour générer des profils aléatoires et remplir les informations sur la page HTML. Vous pouvez utiliser des API pour récupérer les informations aléatoires à partir de ces services et les afficher sur la page HTML.
     const reponseJS = {
         users: [
            {
@@ -483,45 +476,40 @@
 
 
 //informations du profil sur la page
-let profilePic = document.querySelector('img');
+let profilePic = document.querySelector("img");
 profilePic.innerHTML = reponseJS.users[0].picture.large;
-let prenom = document.querySelector('.prenom');
+let prenom = document.querySelector(".prenom");
 prenom.innerHTML = reponseJS.users[0].name.first;
-let nom = document.querySelector('.nom');
+let nom = document.querySelector(".nom");
 nom.innerHTML = reponseJS.users[0].name.last;
-let job = document.querySelector('.job');
+let job = document.querySelector(".job");
 job.innerHTML = reponseJS.users[0].job;
-let age = document.querySelector('.age');
-age.innerHTML = 'Age ' + reponseJS.users[0].dob.age;
-let from = document.querySelector('.from');
-from.innerHTML = 'Pays ' + reponseJS.users[0].location.country;
-let paraPropo = document.querySelector('.paraPropo');
+let age = document.querySelector(".age");
+age.innerHTML = "Age " + reponseJS.users[0].dob.age;
+let from = document.querySelector(".from");
+from.innerHTML = "Pays " + reponseJS.users[0].location.country;
+let paraPropo = document.querySelector(".paraPropo");
 paraPropo.innerHTML = reponseJS.users[0].description + reponseJS.users[0].poste;
 
-const recharger = document.querySelector('main')
-recharger.addEventListener('click',
-() => {
-    console.log('click');
-    recharg();
-    const randomIndex = Math.floor(Math.random() * reponseJS.users.length);
+
+const recharger = document.querySelector("main");
+recharger.addEventListener("click", () => {
+  console.log("click");
+  recharg();
+  const randomIndex = Math.floor(Math.random() * reponseJS.users.length);
   const randomUser = reponseJS.users[randomIndex];
   profilePic.src = randomUser.picture.large;
   prenom.textContent = randomUser.name.first;
   nom.textContent = randomUser.name.last;
   job.textContent = randomUser.job;
-  age.textContent = 'Age ' + randomUser.dob.age;
-  from.textContent = 'Pays ' + randomUser.location.country;
-  paraPropo.textContent = randomUser.description + ' ' + randomUser.poste;
-})
+  age.textContent = "Age " + randomUser.dob.age;
+  from.textContent = "Pays " + randomUser.location.country;
+  paraPropo.textContent = randomUser.description + " " + randomUser.poste;
+});
 
 function recharg() {
-  let i = 0; 
+  let i = 0;
   let hasard = 1 + Math.floor(8 * Math.random());
-  i = i + hasard
-  console.log(i)
+  i = i + hasard;
+  console.log(i);
 }
-
-
-
-
-      

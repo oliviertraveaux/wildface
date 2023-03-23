@@ -476,6 +476,7 @@ const reponseJS = {
   ]
 }
 
+
 let counterChange = 0;
 const actualityPeople = document.querySelector('main');
 const sectionNew = document.createElement('div');

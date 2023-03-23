@@ -33,8 +33,9 @@ header nav button {
 
 main .carreer {
   display: flex;
-  justify-content: space-around;
-  width: 147%;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 75px;
 }
 
 main .carreer div {
@@ -69,7 +70,8 @@ main article p {
   margin: 5% 3%;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-weight: 100;
 }
 
@@ -98,15 +100,14 @@ main .banner .picture {
   background-size: cover;
 }
 
-
-main .information h2{
-  padding-top: 25%;
+main .information h2 {
+  padding-top: 75px;
 }
 
 main .information .biographie {
   display: grid;
   grid-template-rows: 50px 50px;
-  grid-template-columns: 1.3fr 1fr 1.2fr 1fr;
+  grid-template-columns: 1.3fr 1fr 1.3fr 1fr;
   text-align: start;
   width: 100%;
 }
@@ -123,30 +124,28 @@ main article h2 {
 main div h2 {
   padding-bottom: 40px;
 }
-h1,
-h2 {
+main h1,
+main h2 {
   font-family: var(--font-title);
   font-size: medium;
 }
 
 @media screen and (min-width: 421px) {
   main .information {
-    padding: 0 25%;
+    padding: 0 75px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   main .information .biographie {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    width: 145%;
+    width: 100%;
     grid-column-gap: 35px;
-  }
-  main .carreer div {
-    justify-content: space-around;
   }
 
   main .information h2 {
-    padding-top: 25%;
+    padding-top: 75px;
   }
 }
 
@@ -164,4 +163,3 @@ h2 {
   grid-row: 2 / 4 !important;
   grid-column: 2 / 3 !important;
 }
-
