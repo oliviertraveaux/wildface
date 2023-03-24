@@ -19,8 +19,7 @@ console.log(contactedUser_deserialized.name.first);
 
 // WE INJECT FIRSTNAME ET LASTNAME FROM THE OBJECT IN THE H2
 const h2 = document.querySelector("h2");
-h2.innerText = `Contactez ${contactedUser_deserialized.name.first} ${contactedUser_deserialized.name.last}`;
-
+h2.innerText = `Contact ${contactedUser_deserialized.name.first} ${contactedUser_deserialized.name.last}`;
 
 const contactImage = document.querySelector("img");
 console.log(contactImage);
